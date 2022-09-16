@@ -1,0 +1,64 @@
+<html>
+<body>
+    <style>
+    body{
+        margin: 0;
+        background-color: #caebf2 ;
+    }
+    .text 
+    {
+        position: absolute;
+        font-size: 25px;
+        font-family: helvatica;
+        text-align: center;
+        top: 15%;
+        left: 20%;
+        color: black;
+        padding-left:200px;
+        padding-right: 200px;
+        padding-bottom: 20px;
+        border-radius: 35px;
+        border-style: solid;
+        border-width: 4px;
+        background-color: #efefef  ;
+        
+    }
+
+    .btn{
+        background-color: rgb(129, 152, 153);
+        width: 10%;
+        height: 15%;
+        color:black;
+        font-size: 16px;
+    }
+    #textbox{
+     height: 30px  ;
+     font-size: 20px;
+    }
+    </style>
+<div >
+<div class="text">
+
+    <form action="loginpage.php" method="POST">
+<h2>ELECTRICITY BOARD</h2>
+
+Phone Number:
+<input type="text" placeholder="Enter Phone Number" id="login_phone" required/> 
+
+<br>
+Password:
+<input type="password" placeholder="Enter Password Here" id="login_pwd" required/><br>
+<br>
+<input type="submit"  value="LOGIN" ><br>
+
+<div style="font-size: 20px;">
+<p>Not Registered? <a href="registerpage.html" style="color: black;" >Click Here</a></p><br>
+ <a href="resetpassword.html" style="color:black;">Reset Password</a>
+</div>
+ 
+
+</form>
+</div>
+</div>
+</body>
+</html>

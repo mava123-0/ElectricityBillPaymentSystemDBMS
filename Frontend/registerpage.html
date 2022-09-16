@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>
+            Registration Form
+        </title>
+    </head>
+    <style>
+            .text 
+    {
+        position: absolute;
+        font-size: 25px;
+        top: 14%;
+        left: 22.5%;
+        color:black;
+        padding-top: 15px;
+        padding-left:20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        background-color: #efefef;
+        border-radius: 35px;
+        border-style: solid;
+        border-width: 4px;
+        
+    }
+    .head{
+        position: absolute;
+        top: 0%;
+        color  : black;
+        left: 22.5%;
+        font-size: 30px;
+        font-weight: bolder;
+        background-color: #caebf2;
+        border-radius: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+        
+    </style>
+    <body style="line-height: 2.5;background-color: #caebf2 ;">
+        <p class="head">Register Now</p>
+    <form class="text" method="POST">
+        <label>First Name : </label>
+            <input type="text" id="Cust_Fname" placeholder="Your First Name" name="Cust_Fname" required/> 
+        <label>Last Name : </label>
+            <input type="text" id="Cust_Lname"  placeholder="Your Last Name" name="Cust_Lname" required/> <br>
+        <label>Aadhar Number : </label>
+            <input type="text" id="Aadhar_No"  placeholder="Your Aadhar No" name="Aadhar_No" required/> <br>
+        <label>Phone Number : </label>
+            <input type="text" id="Phone_No"  placeholder="Your Phone Number" pattern="[789][0-9]{9}" name="Phone_No" required/>
+        <label>Date Of Birth : </label>
+            <input type="date" id="Dob" name="Dob" required/><br>
+        <label>House No : </label>
+            <input type="number" placeholder="Your House Number"  id="House_No"  name="House_No" required/>
+            <label>Street Name : </label>
+            <input type="text" id="Street_Name" placeholder="Your Street Name"  required/><br>
+            <label>City : </label>
+            <input type="text" id="City"  placeholder="Your City Name" required/>
+            <label>State : </label>
+            <input type="text" id="State"  placeholder="Your State " required/>
+            <label>Pincode : </label>
+            <input type="number" id="Pincode" placeholder="Your Pincode"  required/><br>
+        <label>Meter Number : </label>
+            <input type="number" id="Meter_No"  placeholder="Your Meter Number" required/>
+        <label>Meter Reading : </label>
+            <input type="number" id="Meter_Reading" placeholder="Your Meter Reading"  required/><br>
+
+        <label>Type of Usage : </label>
+        <input type="text" id="User_Category" placeholder="Domestic/Industry"><br>
+                    
+                    
+                Add Payment Method: 
+                <select name="modepayment">
+                    <option value="card">Card</option>
+                    <option value="upi">UPI</option>
+                </select><br>
+                <label>Card Number: </label>
+                <input type="number" placeholder="Enter Card Number" id="Card_No" />
+                <label>CVV: </label>
+                <input type="number" placeholder="Enter CVV" id="CVV" />
+                <label>Expiry Number: </label>
+                <input type="date" placeholder="Enter Expiry Date" id="Expiry_Date" /><br>
+                
+                <label>UPI Id: </label>
+                <input type="text" placeholder="Enter UPI Id" id="Upi_Id" />
+                <label>Mobile Number: </label>
+                <input type="number" placeholder="Enter Mobile Number" id="Mobile_No" /><br>
+
+
+                    <input type="checkbox" id="sppa" name="sppa">
+                    <label>Join SPPA (Solar Power Purchase Agreement)</label>
+                    <input type="text" id="Supply_No" placeholder="Enter your Supply Number"><br>
+                    <input type="text" id="Units_Generated" placeholder="Enter your Supply Reading"><br>
+                <label>Security Questions : </label> 
+                <input type="text" placeholder="Name of First Pet" id="SecQn1" required/>
+                <input type="text" placeholder="Name of First Car" id="SecQn2" required/>
+                <input type="text" placeholder="Name of a Parent " id="SecQn3" required/><br>
+                 <label>Password : </label>
+                 <input type="password" id="Password" placeholder="Enter a Password" name="Password" required/><br>
+        <button type="submit" ><a href="loginpage.html">Register</a></button>
+    </form>
+    </body>
+</html>

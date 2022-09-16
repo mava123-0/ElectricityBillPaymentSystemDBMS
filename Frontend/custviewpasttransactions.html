@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>function onFocus(input)
+        {
+            input.style.background="cyan";
+            
+            
+        }
+        function onBlur(input){
+            input.style.background="white";
+        }
+        function validate(){
+            var fstname =document.getElementById("fname").value;
+            
+           
+            
+            if(fstname == "")
+            {
+                //fstname.style.border.input='solid 3px red';
+                window.alert('Please Enter your  ID');
+                document.getElementById("lblfname").style.visibility='visible';
+                return false;
+            }
+            
+           
+            else{
+                true;
+            }
+
+            
+        }
+     
+        function changeCursor(){
+            
+            document.getElementById("submit").style.cursor = "pointer";
+            document.getElementById("reset").style.cursor = "pointer";
+        }</script>
+    <meta charset="UTF-8" />
+    
+    <title>Past Transactions</title>
+    <style type = "text/css" media = "screen">
+
+        .container {
+            margin: 0px;
+            text-align: center;
+            border-style: solid;
+            border-width: 2px;
+            border-spacing: 10px;
+            
+        }
+        
+        .heading {
+            color: aqua;
+            font-size: 30px;
+            
+        }
+        
+        .success {
+            font-size: 20px;
+            
+        }
+        
+        h2 {
+            color: red;
+            font-size: 20px;
+        }
+        
+        .footer {
+            margin-top: 0px;
+            background-color: rgb(150, 128, 128);
+            text-align: center;
+            color: white;
+            padding: 8px;
+          
+        }
+        
+
+            ::placeholder {
+            color:pink;
+            opacity: 1; 
+        }
+        .survey {
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+            
+        }
+        input {
+           
+           padding: 12px 20px;
+           margin: 8px 0;
+           box-sizing: border-box;
+                     border: 2px solid pink;
+                     border-radius: 4px;
+                   }
+                   table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.board_head{
+        border:solid;
+        border-radius: 10px;
+        margin-left: 35%;
+        margin-right: 33%;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .navbar{
+        background-color: #efefef;  
+        border-radius: 30px;
+    }
+    .navbar ul{
+        overflow:auto;
+    }
+    .navbar li{
+        float:left;
+        list-style: none;
+        font-size: 20px;
+        margin: 13px 20px;
+    }
+    .navbar li a{
+        padding:20px 34px;
+        text-decoration: none;
+        color:black;
+    }
+    .navbar li a:hover {
+        color: red;
+    }   
+    </style>
+</head>
+
+<body style="background-color: #caebf2;">
+    <center><h1 class="board_head">Electricity Board Web Services</h2></center>
+        <header>
+            <nav class="navbar">
+            <ul>
+                <li><a href="custHomepage.html">Home</a></li>
+                    <li><a href="custviewbills.html">Bills</a></li>
+                    <li><a href="custviewpasttransactions.html">Past Transactions</a></li>
+                    <li><a href="custsppa.html">SPPA</a></li>
+                    <li><a href="custfeedback.html">Feedback</a></li>
+                    <li><a href="custprofile.html">Profile</a></li>
+                    <li><a href="custaboutpage.html">About</a></li>
+            </ul>
+            </nav>
+        </header>
+
+    <div class="image">
+        
+    </div>
+    
+    
+    <div class="forms">
+    <form onsubmit="return validate();" style="text-align: left;" ><br>
+    <table border="0"  cellspacing="80" cellpadding="10" style="background-color: azure; align-content: center;" align="center" >
+        <tr>
+            
+            <th>Receipt-ID</th>
+            <th>Receipt-Date</th>
+            <th>Amount Paid</th>
+            <th>Bill-ID </th>
+            <th>Payment mode</th>
+           
+        </tr>
+        
+        <tr>
+            <td>1102</td>
+            <td>18-11-2021</td>
+            <td>754</td>
+            <td>1002</td>
+            <td>Card</td>
+        </tr>
+        <tr>
+            <td>1103</td>
+            <td>10-10-2021</td>
+            <td>126</td>
+            <td>1003</td>
+            <td>Card</td>
+        </tr>
+         <tr>
+            <td>1104</td>
+            <td>15-09-2021</td>
+            <td>531</td>
+            <td>1004</td>
+            <td>Card</td>
+         </tr> 
+         <tr>
+            <td>1105</td>
+            <td>12-08-2021</td>
+            <td>436</td>
+            <td>1005</td>
+            <td>Card</td>
+        </tr> 
+        <tr>
+            <td>1106</td>
+            <td>17-07-2021</td>
+            <td>236</td>
+            <td>1006</td>
+            <td>Card</td>
+        </tr> 
+        <tr>
+            <td>1107</td>
+            <td>15-06-2021</td>
+            <td>763</td>
+            <td>1007</td>
+            <td>UPI</td>
+        </tr>
+        <tr>
+            <td>1108</td>
+            <td>13-05-2021</td>
+            <td>869</td>
+            <td>1008</td>
+            <td>Card</td>
+        </tr>
+        <tr>
+            <td>1109</td>
+            <td>15-04-2021</td>
+            <td>450</td>
+            <td>1009</td>
+            <td>Card</td>
+        </tr>
+        <tr>
+            <td>1110</td>
+            <td>11-03-2021</td>
+            <td>166</td>
+            <td>1010</td>
+            <td>UPI</td>
+            
+        </tr>
+       
+    </table></form></div>
+    
+</body>
+
+</html>

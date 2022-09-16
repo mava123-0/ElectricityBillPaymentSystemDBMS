@@ -1,0 +1,85 @@
+<html>
+
+<style>
+    .join_form{
+        border-style: solid;
+        border-radius: 8px;
+        border-width: 4px;
+        border-color: black;
+        margin-right: 65%;
+        padding-top: 20px;
+        padding-right:20px ;
+        padding-left: 40px;
+        padding-bottom: 20px;
+        background-color: #efefef;
+    }
+    h1{
+        text-align: center;
+    }
+    .board_head{
+        border:solid;
+        border-radius: 10px;
+        margin-left: 35%;
+        margin-right: 31%;
+        padding: 10px 10 10 10;
+    }
+
+    .navbar{
+        background-color: #efefef;  
+        border-radius: 30px;
+    }
+    .navbar ul{
+        overflow:auto;
+    }
+    .navbar li{
+        float:left;
+        list-style: none;
+        font-size: 20px;
+        margin: 13px 20px;
+    }
+    .navbar li a{
+        padding:15px 34px;
+        text-decoration: none;
+        color:black;
+    }
+    .navbar li a:hover {
+        color: red;
+    }
+</style>
+
+<body style="background-color: #caebf2;margin-left: 20px;line-height: 45px;">
+    <center><h1 class="board_head">Electricity Board Web Services</h2></center>
+        <header>
+            <nav class="navbar">
+            <ul>
+                <li><a href="custHomepage.html">Home</a></li>
+                <li><a href="custviewbills.html">Bills</a></li>
+                <li><a href="custviewpasttransactions.html">Past Transactions</a></li>
+                <li><a href="custsppa.html">SPPA</a></li>
+                <li><a href="custprofile.html">Profile</a></li>
+                <li><a href="custaboutpage.html">About</a></li>
+            </ul>
+            </nav>
+        </header>
+    
+    <h1 style="margin-right: 65%;margin-left: 2%;margin-top:2%;text-align: center;">Solar Power Purchase Agreement</h1>
+    
+    <div style="font-size: 20px;margin-left:2%;">
+        <p>The customer should have Solar Power Panels. On joining the SPPA, the customer get subsidies based on the number of units provided the customer. 
+        For every unit of electricity supplied by the customer, amount subsidized based on the current electricity rate from
+        the monthly bill of the customer.</p>
+    <p>You can join the SPPA program by filling the below form. Fill out your Customer Id Number and the Supply Number,</p>
+
+    <div class="join_form">
+    <label>Join SPPA</label>
+    <input type="checkbox" id="sppa_fillform" name="sppa_fillform"><br>
+    <label>Supply Number: </label>
+    <input type="number" id="sppaform_supplyno" placeholder="Enter Your Supply Number" name="sppaform_supplyno"><br>
+    <label>Reading: </label>
+    <input type="number" id="sppaform_custid" placeholder="Enter Your Customer Id" name="sppaform_custid"><br>
+    <button type="Submit" id="sppa_submit">Submit</button>
+    </div>
+    </div>
+
+</body>
+</html>
